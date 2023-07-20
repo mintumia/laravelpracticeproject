@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use Closure;
+use http\Env\Request;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
@@ -12,26 +13,28 @@ class MintuTestComp extends Component
      * Create a new component instance.
      */
 
-    public  $type;
-    public  $name;
-    public  $label;
-
-
-
-    public function __construct($type = "", $name= "", $label= "")
+    public function __construct(
+        public string $type = "",
+        public string $name = "",
+        public string $label = "",
+        public string $class = "",
+        public string $id = ""
+        )
     {
-
-        $this->type = $type ;
-        $this->name = $name;
-        $this->label = $label;
-        //
+/****
+ ******** __construct function Body
+ ********
+ ****/
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     */
-    public function render(): View|Closure|string
-    {
-        return view('components.mintu-test-comp');
-    }
+
+
+
+/**
+ * Get the view / contents that represent the component.
+ */
+public function render(): View|Closure|string
+{
+    return view('components.mintu-test-comp');
+}
 }

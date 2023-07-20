@@ -8,14 +8,16 @@
     <title>New Page</title>
     <link rel="stylesheet" href="{{asset('plugins')}}/bootstrap5/bootstrap.min.css">
 </head>
-<body>
+<body class="container-fluid">
 
 <h2>Hellow ss</h2>
 <form action="{{url('testcomp')}}" method="post">
     @csrf
 <div class="container">
-    <x-MintuTestComp type="text" name = "name" label = "Full Name : "/>
-    <x-MintuTestComp type="email" name = "email" label = "Valid Email : "/>
+    <x-MintuTestComp type="text" name="name" id="name" class="form-control" label="Full Name : "/>
+    <x-MintuTestComp type="email" name="email" id="email" class="form-control" label="Email Address : "/>
+    <x-MintuTestComp type="date" name="bdate" id="bdate" class="form-control" label="Date of Birth : "/>
+    <x-MintuTestComp type="submit" name="submit" id="submit" class="w-100 btn-success rounded text-center" label=""/>
 
 </div>
 </form>

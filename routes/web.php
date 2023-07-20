@@ -29,4 +29,5 @@ Route::middleware([
 });
 
 
-Route::get('testcomp',[MintuController::class,'index']);
+Route::get('testcomp',[MintuController::class,'index'])->name('testcomp');
+Route::post('testcomp',[MintuController::class,'store'])->name('testcomp');

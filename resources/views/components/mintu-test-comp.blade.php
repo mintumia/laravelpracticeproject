@@ -1,7 +1,7 @@
 <div class="form-group">
 
-        <label for="" >{{$label}}</label>
-        <input type="{{$type}}"  name = "{{$name}}" id ="" class="form-control" />
+        <label class = "form-label" for="{{$id}}" >{{$label}}</label>
+        <input type="{{$type}}"  name = "{{$name}}" id ="{{$id}}" class="{{$class}}" />
 
 
 </div>
