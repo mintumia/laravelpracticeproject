@@ -6,15 +6,22 @@ use Livewire\Component;
 
 class Contact extends Component
 {
+    public  bool $newcontact = true;
     public $contactInfo;
 
-   /* public function mounded(){
+    /* public function mounded(){
 
-        $this->contactInfo;
-    }*/
+         $this->contactInfo;
+     }*/
 
-public function render()
-{
-    return view('livewire.contact');
-}
+    public function render()
+    {
+        return view('livewire.contact');
+    }
+
+    public function createContact(){
+        $this->newcontact=false;
+
+    }
+
 }
