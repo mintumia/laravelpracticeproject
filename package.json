@@ -1,10 +1,13 @@
 {
+
     "private": true,
     "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "build": "tailwindcss -i ./resources/css/app.css -o public/plugins/tailwindcss/main.css -w"
+        "build":"tailwindcss -i ./resources/css/app.css -o public/plugins/tailwindcss/main.css -w"
+
+
     },
     "devDependencies": {
         "@alpinejs/focus": "^3.10.5",

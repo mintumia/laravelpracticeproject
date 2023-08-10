@@ -41,3 +41,11 @@ Route::resource("posts",PostController::class);
   PUT|PATCH       postcontrollers/{postcontroller} ... postcontrollers.update › PostController@update
   DELETE          postcontrollers/{postcontroller} ... postcontrollers.destroy › PostController@destroy
   GET|HEAD        postcontrollers/{postcontroller}/edit ... postcontrollers.edit › PostController@edit*/
+
+/*Route::get("mintu",function (){
+//live testsing views
+    return view('contact');
+});*/
+
+Route::view('contact','contact');
+
